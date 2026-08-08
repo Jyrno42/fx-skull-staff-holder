@@ -28,6 +28,13 @@ break it:
 
 None of the Deer Isle files are touched.
 
+## Classname
+
+`fx_skull_staff_holder`
+
+It's craftable, so it doesn't need a types.xml entry. Add one if you'd rather it spawned as
+loot.
+
 ## Requires
 
 `Survivalists_Weapons_JMC_Proxy`. It ships with Deer Isle and declares the melee slot the
