@@ -1,0 +1,10 @@
+# Build output and packer scratch
+.build_lockfile.json
+buildlog/
+dist/
+*.pbo
+*.zip
+
+# Python bytecode
+__pycache__/
+*.pyc

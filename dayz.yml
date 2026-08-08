@@ -1,0 +1,38 @@
+# dayzmod build manifest.
+#
+# Machine paths (DayZ, DayZ Tools, Mikero, keys) are NOT here -- they live in the
+# user config, written by `dayzmod config init` and checked by `dayzmod doctor`.
+version: 1
+requires_tool: ">= 0.1.0"
+
+mod:
+  id: fx-skull-staff-holder
+  name: "@fx-skull-staff-holder"
+  visibility: public
+
+repo:
+  # Determines every PBO prefix, so the paths baked into config.cpp and the p3ds
+  # depend on it. Changing this means regenerating the models.
+  pdrive_path: 'P:\projects\fx-skull-staff-holder'
+  pdrive_link_from: 'E:\projects\fx-skull-staff-holder'
+
+addon_sets:
+  main:
+    source: mod
+    addons:
+      FX_SkullStaffHolder:
+        policy: { side: both }
+
+channels:
+  dev:
+    packer: addonbuilder
+    deploy: [client, server]
+    change_detection: lockfile
+    sign: false
+
+  release:
+    packer: addonbuilder
+    change_detection: none
+    sign: false
+    zip:
+      enabled: true
