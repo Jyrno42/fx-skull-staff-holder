@@ -1,6 +1,7 @@
 # fx-skull-staff-holder
 
-![The skull staff standing on the stone holder](staff-in-game.png)
+<img src="staff-in-game.png" alt="The skull staff standing on the stone holder" height="400">
+
 
 A stone stand for Deer Isle's skull staff (`SRP_Staff_Skull_Basic`).
 
