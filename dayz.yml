@@ -33,6 +33,7 @@ channels:
   release:
     packer: addonbuilder
     change_detection: none
-    sign: false
+    sign:
+      key: "TH3F0X"
     zip:
-      enabled: true
+      enabled: false
